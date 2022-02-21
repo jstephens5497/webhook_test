@@ -6,7 +6,8 @@
   tasks:
     - name: Get info
       debug:
-        msg: "{{ ansible_mounts }}"  
+        msg: "{{ ansible_mounts }}"
+      register: mounts
       
     - name: Get more info
       debug:
