@@ -1,5 +1,5 @@
 ---
-- name: get factss
+- name: get factsse
   hosts: all
   become: true
 
