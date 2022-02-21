@@ -1,0 +1,15 @@
+---
+- name: get facts
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Get info
+      debug:
+        msg: "{{ ansible_mounts }}"  
+      
+    - name: Get more info
+      debug:
+        msg: "{{ ansible_hostname }}"
+      
+      
